@@ -22,7 +22,7 @@
   "zipCompressJs": true,
   "fb-instant-games": {},
   "android": {
-    "REMOTE_SERVER_ROOT": "https://yannaingwin21.github.io/assetBundleTesting",
+    "REMOTE_SERVER_ROOT": "",
     "packageName": "org.cocos2d.demo"
   },
   "ios": {
