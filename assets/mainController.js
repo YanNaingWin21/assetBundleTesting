@@ -29,6 +29,10 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad() {
+
+    },
+
+    loadAssetBundleLocal(){
         cc.assetManager.loadBundle('colorAssemble', function (err, bundle) {
             if (err) {
                 return console.error(err);
@@ -39,7 +43,18 @@ cc.Class({
             });
             console.log('load bundle successfully.');
         });
+    },
+    loadAssetBundleURL(){
+        cc.assetManager.loadBundle('https://yannaingwin21.github.io/assetBundleTesting/remote/colorAssemble', function (err, bundle) {
+            if (err) {
+                return console.error(err);
+            }
 
+            bundle.loadScene('colorAssemble', function (err, scene) {
+                cc.director.runScene(scene);
+            });
+            console.log('load bundle successfully.');
+        });
     },
 
     start() {

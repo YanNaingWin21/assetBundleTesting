@@ -3,10 +3,22 @@
   "uuid": "1cc0b165-48ec-405d-a3cc-291a985c327a",
   "isBundle": true,
   "bundleName": "colorAssemble",
-  "priority": 1,
-  "compressionType": {},
-  "optimizeHotUpdate": {},
-  "inlineSpriteFrames": {},
-  "isRemoteBundle": {},
+  "priority": "1",
+  "compressionType": {
+    "web-mobile": "default",
+    "android": "default"
+  },
+  "optimizeHotUpdate": {
+    "web-mobile": false,
+    "android": false
+  },
+  "inlineSpriteFrames": {
+    "web-mobile": false,
+    "android": false
+  },
+  "isRemoteBundle": {
+    "web-mobile": false,
+    "android": true
+  },
   "subMetas": {}
 }
